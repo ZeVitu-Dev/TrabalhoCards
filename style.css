@@ -18,6 +18,8 @@ body {
     width: 100%;
     max-width: 1110px;
     background-color: hsl(244, 37%, 16%);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .content {
@@ -42,21 +44,57 @@ body {
     gap: 6px;
 }
 
-.p1 {
+.linhanumero {
     font-size: 24px;
     font-weight: bold;
 }
 
-.p2 {
+.linharotulo {
     font-size: 12px;
     text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 .card-img {
-    width: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
 }
 
-.corroxa {
+.image-container {
+    width: 50%;
+    background-color: hsl(277, 64%, 61%);
+    overflow: hidden;
+}
+
+.destaqueroxo {
     color: hsl(277, 64%, 61%);
+}
+
+.descricao {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
