@@ -1,104 +1,95 @@
-# Frontend Mentor - Componente de card de prévia de estatísticas
+# Card de Prévia de Estatísticas
 
-![Prévia do design do desafio de código Componente de card de prévia de estatísticas](preview.jpg)
+Projeto desenvolvido como atividade de HTML e CSS, baseado no desafio **Stats Preview Card Component**.
 
-## Bem-vindo! 👋
+O objetivo foi reproduzir o layout proposto utilizando HTML e CSS, criando uma página responsiva que se adapta tanto para computadores quanto para dispositivos móveis.
 
-Obrigado por conferir este desafio de front-end.
+## Resultado
 
-Os desafios do [Frontend Mentor](https://www.frontendmentor.io) ajudam você a melhorar suas habilidades de programação construindo projetos realistas.
+O projeto pode ser acessado pelo GitHub Pages:
 
-**Para realizar este desafio, você precisa ter um conhecimento básico de HTML e CSS.**
+https://zevitu-dev.github.io/TrabalhoCards/
 
-## O desafio
+## Tecnologias utilizadas
 
-Seu desafio é construir este componente de card e deixá-lo o mais próximo possível do design.
+- HTML5
+- CSS3
+- Flexbox
+- Media Queries
+- Google Fonts
+- Git e GitHub
+- GitHub Pages
 
-Você pode usar qualquer ferramenta que quiser para ajudá-lo a completar o desafio. Então, se você tem algo que gostaria de praticar, sinta-se à vontade para tentar.
+## Estrutura do projeto
 
-Seus usuários devem ser capazes de:
+O HTML foi organizado utilizando um elemento principal para representar o card.
 
-- Visualizar o layout ideal dependendo do tamanho da tela do dispositivo
+O card foi dividido em duas partes principais:
 
-### Precisa de ajuda no desafio?
+- Área de conteúdo;
+- Área da imagem.
 
-[Junte-se à nossa comunidade](https://www.frontendmentor.io/community) e faça perguntas no canal **#help**.
+Na área de conteúdo foram adicionados:
 
-## Onde encontrar tudo
+- Título principal;
+- Texto de descrição;
+- Três estatísticas;
+- Valores e rótulos de cada estatística.
 
-Sua tarefa é construir o projeto seguindo os designs dentro da pasta `/design`. Você encontrará tanto a versão mobile quanto a desktop do design.
+A área da imagem possui a fotografia fornecida pelo desafio e um efeito de cor roxa aplicado através do CSS.
 
-Os designs estão em formato JPG estático. Usar JPGs significa que você precisará usar seu melhor julgamento para estilos como `font-size`, `padding` e `margin`.
+## Estilização
 
-Se você quiser o arquivo de design Figma para inspecionar o design com mais detalhes, você pode [se inscrever como membro PRO](https://www.frontendmentor.io/pro).
+Para organizar os elementos foi utilizado principalmente **Flexbox**.
 
-Você encontrará todos os recursos necessários na pasta `/images`. Os recursos já estão otimizados.
+No desktop, o card é dividido horizontalmente:
 
-Há também um arquivo `style-guide.md` contendo as informações que você precisará, como paleta de cores e fontes.
+- Conteúdo no lado esquerdo;
+- Imagem no lado direito.
 
-## Usando assistentes de código com IA
+Cada área ocupa aproximadamente 50% da largura do card.
 
-Incluímos dois arquivos para ajudá-lo se você estiver usando assistentes de código com IA (como Claude, GitHub Copilot, Cursor, etc.) enquanto trabalha neste desafio:
+Também foram utilizadas as fontes **Inter** e **Lexend Deca**, disponibilizadas pelo Google Fonts.
 
-- `AGENTS.md` - Contém instruções detalhadas para assistentes de IA sobre como ajudá-lo neste desafio. É adaptado ao nível de dificuldade deste desafio, então a IA fornecerá orientação apropriada ao seu estágio de aprendizado — oferecendo mais suporte para desafios de iniciante e incentivando mais independência nos avançados.
-- `CLAUDE.md` - Um arquivo de referência que direciona ferramentas baseadas no Claude para as instruções do AGENTS.md.
+As cores utilizadas seguem o guia de estilos fornecido no desafio.
 
-**Como usá-los:** Você não precisa fazer nada! Esses arquivos são detectados automaticamente pela maioria das ferramentas de código com IA. A IA os lerá e ajustará seu comportamento para ser um melhor parceiro de aprendizado — guiando você em direção a soluções em vez de apenas dar as respostas.
+A palavra `insights` recebeu uma classe própria para aplicar a cor roxa de destaque.
 
-**Nota:** Esses arquivos foram projetados para ajudá-lo a *aprender*, não para fazer o trabalho por você. A IA é instruída a fazer perguntas, dar dicas e explicar conceitos em vez de escrever soluções completas.
+## Estatísticas
 
-## Construindo seu projeto
+As estatísticas foram organizadas utilizando Flexbox.
 
-Sinta-se livre para usar qualquer fluxo de trabalho com o qual se sinta confortável. Abaixo está um processo sugerido, mas não sinta que precisa seguir estas etapas:
+No desktop elas aparecem lado a lado:
 
-1. Inicialize seu projeto como um repositório público no [GitHub](https://github.com/). Criar um repositório facilitará compartilhar seu código com a comunidade se precisar de ajuda. Se não tiver certeza de como fazer isso, [leia este recurso do Try Git](https://try.github.io/).
-2. Configure seu repositório para publicar seu código em um endereço web. Isso também será útil se precisar de ajuda durante um desafio, pois você pode compartilhar a URL do seu projeto junto com a URL do repositório. Existem várias maneiras de fazer isso, e fornecemos algumas recomendações abaixo.
-3. Analise os designs para começar a planejar como você abordará o projeto. Esta etapa é crucial para ajudá-lo a pensar antecipadamente nas classes CSS para criar estilos reutilizáveis.
-4. Antes de adicionar qualquer estilo, estruture seu conteúdo com HTML. Escrever seu HTML primeiro pode ajudar a focar sua atenção na criação de conteúdo bem estruturado.
-5. Escreva os estilos base do seu projeto, incluindo estilos gerais de conteúdo, como `font-family` e `font-size`.
-6. Comece adicionando estilos no topo da página e vá descendo. Só passe para a próxima seção quando estiver satisfeito com a área em que está trabalhando.
+10K+ | 314 | 12M+
 
-## Publicando seu projeto
+Enquanto os rótulos aparecem abaixo de cada valor:
 
-Conforme mencionado acima, existem muitas maneiras de hospedar seu projeto gratuitamente. Nossos hospedeiros recomendados são:
+- Companies
+- Templates
+- Queries
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+Os valores possuem maior tamanho e peso de fonte, enquanto os rótulos utilizam uma fonte menor e uma cor mais suave.
 
-Você pode hospedar seu site usando uma dessas soluções ou qualquer um de nossos outros provedores confiáveis. [Leia mais sobre nossos hospedeiros recomendados e confiáveis](https://www.frontendmentor.io/guides/hosting-your-solution).
+## Imagem
 
-## Crie um `README.md` personalizado
+A imagem foi colocada dentro de um container próprio.
 
-Recomendamos fortemente substituir este `README.md` por um personalizado. Fornecemos um modelo dentro do arquivo [`README-template.md`](./README-template.md) neste código inicial.
+Para produzir o efeito roxo presente no design original foram utilizadas as propriedades:
 
-O modelo fornece um guia sobre o que adicionar. Um `README` personalizado ajudará você a explicar seu projeto e refletir sobre o que aprendeu. Por favor, sinta-se livre para editar nosso modelo tanto quanto quiser.
+- `background-color`
+- `mix-blend-mode`
+- `opacity`
 
-Depois de adicionar suas informações ao modelo, exclua este arquivo e renomeie o arquivo `README-template.md` para `README.md`. Isso fará com que ele apareça como o arquivo README do seu repositório.
+Também foi utilizado:
 
-## Enviando sua solução
+`object-fit: cover`
 
-Envie sua solução na plataforma para que o resto da comunidade possa ver. Siga nosso ["Guia completo para enviar soluções"](https://www.frontendmentor.io/guides/how-to-submit-solutions) para dicas sobre como fazer isso.
+para manter a proporção da imagem sem deformá-la.
 
-Lembre-se, se você estiver procurando feedback sobre sua solução, faça perguntas ao enviá-la. Quanto mais específico e detalhado você for com suas perguntas, maior a chance de receber feedback valioso da comunidade.
+## Responsividade
 
-## Compartilhando sua solução
+Para adaptar o projeto para dispositivos móveis foi utilizada uma Media Query:
 
-Existem vários lugares onde você pode compartilhar sua solução:
-
-1. Compartilhe a página da sua solução no canal **#finished-projects** da [comunidade](https://www.frontendmentor.io/community).
-2. Compartilhe no [X (antigo Twitter)](https://x.com/frontendmentor) e mencione **@frontendmentor**, incluindo as URLs do repositório e do site ao vivo na sua postagem. Adoraríamos ver o que você construiu e ajudar a compartilhar.
-3. Compartilhe sua solução no [LinkedIn](https://www.linkedin.com/company/frontend-mentor/).
-4. Escreva um blog sobre sua experiência construindo seu projeto. Escrever sobre seu fluxo de trabalho, escolhas técnicas e falar sobre seu código é uma maneira brilhante de reforçar o que você aprendeu. Ótimas plataformas para escrever são [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/) e [CodeNewbie](https://community.codenewbie.org/).
-
-Fornecemos modelos para ajudá-lo a compartilhar sua solução depois de enviá-la na plataforma. Por favor, edite-os e inclua perguntas específicas quando estiver procurando feedback.
-
-Quanto mais específico você for com suas perguntas, mais provável é que outro membro da comunidade lhe dê feedback.
-
-## Tem feedback para nós?
-
-Adoramos receber feedback! Estamos sempre procurando melhorar nossos desafios e nossa plataforma. Então, se você tiver algo que gostaria de mencionar, envie um e-mail para hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+```css
+@media (max-width: 768px)
